@@ -1,0 +1,108 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+
+
+// WORKDETAIL
+#work-detail {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .detail-header {
+        font-family: $family-display;
+        padding: 10vh 15vw;
+    }
+
+    .detail-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        height: 100%;
+        position: relative;
+
+        .detail-img {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+            overflow: hidden;
+            width: 60%;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .text-box {
+            width: 35%;
+            height: 100%;
+            padding-right: 10vw;
+            margin-bottom: 15vh;
+            position: sticky;
+            top: 10vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .year {
+                font-family: $family-en;
+
+            }
+
+            .detail-specs {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                >h3 {
+                    font-family: $family-tc;
+                }
+
+                >li {
+                    font-family: $family-tc;
+                }
+            }
+
+            .detail-desc {
+                >h3 {
+                    font-family: $family-tc;
+                }
+            }
+        }
+
+        .back {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 130px;
+            margin-top: 3rem;
+
+            img {
+                width: 40px;
+            }
+
+            p {
+                font-family: $family-tc;
+                font-size: $f-s-sm;
+                color: $sage;
+            }
+
+        }
+
+        @media(max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15vw;
+
+            .detail-img {
+                width: 100%;
+            }
+
+            .text-box {
+                width: 100%;
+            }
+        }
+    }
+
+}

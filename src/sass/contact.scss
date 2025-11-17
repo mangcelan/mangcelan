@@ -1,0 +1,220 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Quicksand:wght@300..700&display=swap');
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 400vh;
+  position: relative;
+
+  // 視窗容器
+  .viewport {
+    height: 180vh;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    .bg {
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      inset: 0;
+      background: url(../assets/images/visit/woodcraft_visit10.jpg) no-repeat center/ cover;
+      filter: blur(3px) brightness(70%);
+      z-index: 0;
+      --base: 0;
+      --distance: -30vh;
+      animation: parallax 1s linear both;
+      animation-timeline: scroll(y root);
+    }
+
+    // 聯絡區塊
+    .visit-wrap {
+      position: absolute;
+      height: fit-content;
+      width: clamp(380px, 40vw, 620px);
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+
+      padding: 10% 7%;
+      background-color: $cream;
+
+      z-index: 1;
+
+      --base: 300px;
+      --distance: -100vh;
+      transform: translateY(var(--base));
+
+      animation: parallax 1s linear both;
+      animation-timeline: scroll(y root);
+      will-change: transform;
+
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+
+        .progress-box {
+          display: flex;
+          flex-direction: column;
+
+          .progress {
+            height: fit-content;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .dot-box {
+              display: flex;
+              justify-content: space-around;
+              position: absolute;
+              width: 100%;
+
+              .dot {
+                display: block;
+                background-color: $light-gray;
+                height: 12px;
+                width: 12px;
+                border-radius: 99px;
+
+                &:nth-child(1) {
+                  background-color: $sage;
+                }
+              }
+            }
+
+            .bar {
+              display: block;
+              background-color: $light-gray;
+              height: 1.5px;
+              width: 100%;
+              margin: 20px 0;
+            }
+          }
+
+          .state {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+
+      #contactform {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+
+        label {
+          font-family: $family-tc;
+          font-size: $f-s-sm;
+          font-weight: $f-w-r;
+          display: flex;
+          align-items: center;
+        }
+
+        input,
+        textarea {
+          height: 32px;
+          line-height: 28px;
+          font-family: $family-tc;
+          font-size: $f-s-xs;
+          font-weight: $f-w-r;
+        }
+
+        span {
+          position: absolute;
+          right: 0;
+          font-family: $family-tc;
+          font-size: $f-s-xxs;
+          font-weight: $f-w-r;
+          background-color: $sage;
+          color: $cream;
+          padding: 1px 10px;
+          border-radius: $radius-ex;
+          letter-spacing: 0.1rem;
+        }
+
+        .input-box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .btn-animation {
+          // 按鈕原生樣式
+          appearance: none;
+          -webkit-appearance: none;
+          background: none;
+          border: none;
+          border-radius: 0;
+          padding: 0;
+          align-self: center;
+          margin-top: 70px;
+
+          font-family: $family-tc;
+          font-size: $f-s-sm;
+          font-weight: $f-w-r;
+
+          p {
+            font-family: $family-tc;
+            font-size: $f-s-md;
+            font-weight: $f-w-r;
+            color: $cream;
+            padding: 10px 30px;
+            background-color: $sage;
+            border: 1.5px solid $sage;
+            letter-spacing: 0.2rem;
+
+            &:hover {
+              color: $white;
+              background-color: $wood;
+              border: 1.5px solid $wood;
+              border-radius: $radius-ex;
+              transition: all, 0.45s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 220vh;
+
+    .viewport {
+      height: 220vh;
+      position: absolute;
+
+      .bg {
+        --base: 0;
+        --distance: 0;
+      }
+
+      .visit-wrap {
+        width: fit-content;
+        margin: 25vh 0;
+        --base: 0;
+        transform: translateY(var(--base));
+
+        animation: none;
+        will-change: transform;
+      }
+    }
+  }
+}
+

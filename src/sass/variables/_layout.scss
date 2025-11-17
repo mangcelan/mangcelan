@@ -1,0 +1,143 @@
+@use '../reset'; // @use須在任何其他規則之前寫入
+@use './color' as *;
+@use './font' as *;
+@use './size' as *;
+
+// * {
+//   outline: 0.5px solid red;
+// }
+
+// WRAP
+.wrap {
+  width: 100vw;
+
+  // NAVBAR
+  .navbar {
+    // height: 120px;
+    img {
+      width: 160px;
+    }
+
+    button {
+      appearance: none !important;
+
+    }
+    .navbar-toggler {
+      appearance: none !important;
+      $btn-border-width:0
+    }
+
+    .navbar-toggler {
+      color: none;
+    }
+  }
+
+  // BACKTOTOP
+  .top-btn {
+    border: none;
+    appearance: none;
+    background-color: transparent;
+
+    position: fixed;
+    z-index: 5;
+    aspect-ratio: 1/1;
+    border-radius: $radius-ex;
+    background-color: $cream;
+    width: 72px;
+    right: 5vw;
+    bottom: 7vh;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    .tArrow {
+      width: 24px;
+    }
+
+    &:hover {
+      background-color: $wood;
+      transition: all 0.45s;
+    }
+  }
+
+  // RESERVATION
+  .reserve-btn {
+    position: fixed;
+    z-index: 3;
+    bottom: 150px;
+    left: 0;
+    background-color: transparent;
+    border-right: none;
+
+    .reservation {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      padding: 40px 7px;
+      background-color: $cream;
+      border: 1.5px solid $cream;
+
+      p {
+        font-family: $family-tc;
+        font-size: $f-s-md;
+        font-weight: $f-w-r;
+        color: $wood;
+        writing-mode: vertical-rl;
+        letter-spacing: 0.2rem;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $wood;
+        border: 1.5px solid $wood;
+        transition: all, 0.45s;
+
+        p {
+          color: $cream;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+  #footer {
+    color: $white;
+    background-color: $sage;
+    padding: 10% 10% 5%;
+    position: relative;
+    z-index: 4;
+
+    .footer-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 40px;
+      text-wrap: nowrap;
+
+      .title {
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        top: 20%;
+        gap: 8px;
+      }
+
+      .contact-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    .copyright {
+      padding: 10vh 0 0;
+
+      small {
+        font-family: $family-tc;
+        font-size: $f-s-xxs;
+        font-weight: $f-w-r;
+      }
+    }
+  }
+}
+

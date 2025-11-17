@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  logs: true;               /* 讓 daisyUI 在終端機輸出載入訊息 */
+  themes: light --default;  /* 隨便給個設定，確定有被解析 */
+}

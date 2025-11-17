@@ -1,0 +1,152 @@
+@use 'reset'; // @use須在任何其他規則之前寫入
+@use 'variables' as *;
+@use 'function' as *;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Quicksand:wght@300..700&display=swap');
+
+// HERO
+.hero {
+  position: relative;
+  // height: fit-content;
+  overflow: hidden;
+
+  header {
+    color: $cream;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30vh 15vw 0;
+  }
+
+  video {
+    filter: brightness(60%) contrast(110%);
+    width: auto;
+    height: 100%;
+  }
+}
+
+// Our Story
+#Ourstory {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  background-color: $sand;
+
+  height: 180vh;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 15vw 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: 10vh 0;
+    z-index: 1;
+    width: 100%;
+
+    .text {
+      padding: 10%;
+      background-color: $light;
+      text-align: center;
+      width: fit-content;
+    }
+
+    a {
+      padding: 24px 100px;
+    }
+
+    .brand-img {
+      // 按鈕原生樣式
+      appearance: none;
+      -webkit-appearance: none;
+      background: none;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      align-self: center;
+      margin-top: 70px;
+
+      font-family: $family-tc;
+      font-size: $f-s-sm;
+      font-weight: $f-w-r;
+
+      p {
+        color: $cream;
+        padding: 7px 40px;
+        background-color: $sage;
+        border: 1.5px solid $sage;
+
+        font-family: $family-tc;
+        font-size: $f-s-md;
+        font-weight: $f-w-r;
+        letter-spacing: 0.1rem;
+
+        &:hover {
+          color: $white;
+          background-color: $wood;
+          border: 1.5px solid $wood;
+          border-radius: $radius-ex;
+          transition: all, 0.45s;
+        }
+      }
+    }
+  }
+
+  .image-box {
+    position: absolute;
+    z-index: 0;
+    width: 10px;
+    height: 10px;
+
+    .img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      aspect-ratio: 1/1;
+      width: clamp(120px, 40vw, 300px);
+      overflow: hidden;
+      will-change: transform, opacity;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.1s linear;
+      }
+    }
+
+    .img1 {
+      top: -70vh;
+      left: 25vw;
+    }
+    .img2 {
+      top: -20vh;
+      left: -40vw;
+    }
+    .img3 {
+      top: 0;
+      left: 35vw;
+    }
+    .img4 {
+      top: 40vh;
+      left: -55vw;
+    }
+    .img5 {
+      top: 65vh;
+      left: 15vw;
+    }
+  }
+}
+
