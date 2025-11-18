@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-light sticky-top py-4"
+        className="navbar navbar-expand-lg navbar-light sticky-top py-3"
         style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
       >
         <div className="container-fluid px-5">
@@ -17,7 +17,7 @@ const Nav = () => {
           </NavLink>
 
           <button
-            className="navbar-toggler btn btn-link"
+            className="navbar-toggler shadow-none btn border-0 bg-none rounded"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
@@ -25,20 +25,7 @@ const Nav = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div
@@ -47,38 +34,47 @@ const Nav = () => {
             id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel"
           >
-            <ul className="offcanvas-body">
-              <li className="nav-item">
+            <div className="offcanvas-header m-4">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <ul className="offcanvas-body justify-content-end nav-underline">
+              <li className="nav-item mx-3">
                 <NavLink
                   to="/"
-                  className="nav-link"
+                  className="nav-link link"
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
                   首頁
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-3">
                 <NavLink
                   to="/about"
-                  className="nav-link"
+                  className="nav-link link"
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
                   關於蠻自然
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-3">
                 <NavLink
                   to="/works"
-                  className="nav-link"
+                  className="nav-link link"
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
                   作品介紹
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-3">
                 <NavLink
                   to="/contact"
-                  className="nav-link"
+                  className="nav-link link"
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
                   聯繫我們

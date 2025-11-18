@@ -15,20 +15,62 @@
   .navbar {
     // height: 120px;
     img {
-      width: 160px;
+      width: 135px;
     }
 
     button {
       appearance: none !important;
-
     }
     .navbar-toggler {
       appearance: none !important;
-      $btn-border-width:0
+      $btn-border-width: 0;
     }
 
     .navbar-toggler {
       color: none;
+    }
+
+    ul {
+      position: absolute;
+      width: 80%;
+      padding: 0px;
+      list-style: none;
+      text-align: center;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      // padding: 0px 15px;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: $wood;
+    }
+
+    .link {
+      position: relative;
+    }
+
+    .link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: #fff;
+      transition: width 0.2s ease;
+      -webkit-transition: width 0.2s ease;
+    }
+
+    .link:hover:after {
+      width: 100%;
+      left: 0;
+      background: #fff;
     }
   }
 
