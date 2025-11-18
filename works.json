@@ -1,0 +1,75 @@
+[
+  {
+    "id": "001",
+    "slug": "carved-tv-console",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_chair.01-1.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  },
+  {
+    "id": "002",
+    "slug": "wabi-sabi-stool",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_cabinet.02-1.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  },
+  {
+    "id": "003",
+    "slug": "wasabi-stool",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_chair.02-3.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  },
+  {
+    "id": "004",
+    "slug": "kawaii-stool",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_bedstead.01-1.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  },
+  {
+    "id": "005",
+    "slug": "C-stand",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_cabinet.07-1.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  },
+  {
+    "id": "006",
+    "slug": "mangcelan-chair",
+    "title": "侘寂系列｜實木椅凳",
+    "year": 2025,
+    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_desk.01-3.jpg",
+    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+  }
+]
+
