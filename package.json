@@ -15,7 +15,6 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.5",
     "aos": "^2.3.4",
-    "bootstrap": "^5.3.8",
     "motion": "^12.23.21",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

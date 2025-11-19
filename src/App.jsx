@@ -3,10 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
-// BOOTSTRAP
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';

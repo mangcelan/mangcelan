@@ -1,2 +1,2 @@
-@use './variables' as *; // 這行就會 forward 出所有變數與 Bootstrap 模組
+@use './variables' as *;
 @use './reset';

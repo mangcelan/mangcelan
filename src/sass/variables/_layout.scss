@@ -3,9 +3,9 @@
 @use './font' as *;
 @use './size' as *;
 
-// * {
-//   outline: 0.5px solid red;
-// }
+* {
+  outline: 0.5px solid red;
+}
 
 // WRAP
 .wrap {
@@ -13,26 +13,10 @@
 
   // NAVBAR
   .navbar {
-    // height: 120px;
-    img {
-      width: 135px;
-    }
-
-    button {
-      appearance: none !important;
-    }
-    .navbar-toggler {
-      appearance: none !important;
-      $btn-border-width: 0;
-    }
-
-    .navbar-toggler {
-      color: none;
-    }
-
+    display: flex;
+    
     ul {
       position: absolute;
-      width: 80%;
       padding: 0px;
       list-style: none;
       text-align: center;
@@ -41,8 +25,7 @@
     li {
       position: relative;
       display: inline-block;
-      // padding: 0px 15px;
-      color: #fff;
+      color: $wood;
     }
 
     a {
@@ -62,7 +45,7 @@
       display: block;
       margin-top: 5px;
       right: 0;
-      background: #fff;
+      background: $wood;
       transition: width 0.2s ease;
       -webkit-transition: width 0.2s ease;
     }
@@ -70,7 +53,7 @@
     .link:hover:after {
       width: 100%;
       left: 0;
-      background: #fff;
+      background: $wood;
     }
   }
 
