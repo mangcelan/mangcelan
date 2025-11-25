@@ -34,7 +34,6 @@ import sw4 from '../assets/images/works/works_livingroom.01-1.jpg';
 // SASS
 import '../sass/homepage.scss';
 
-
 export default function Homepage() {
   // VIDEO
   // 使用 useRef 來取得 DOM 元素的引用 (代替 getElementById)
@@ -118,27 +117,30 @@ export default function Homepage() {
             </p>
           </div>
 
-          <Link to="/contact" className="brand-img">
+          <Link to="/about" className="brand-img">
             <p>品牌形象</p>
           </Link>
         </div>
 
-        <div className="image-box">
-          {/* 照片 */}
-          <div className="img img1">
-            <img src={vst1} alt="" />
-          </div>
-          <div className="img img2">
-            <img src={vst2} alt="" />
-          </div>
-          <div className="img img3">
-            <img src={vst3} alt="" />
-          </div>
-          <div className="img img4">
-            <img src={vst4} alt="" />
-          </div>
-          <div className="img img5">
-            <img src={vst5} alt="" />
+        <div className="bg-box">
+
+          <div className="image-box">
+            {/* 照片 */}
+            <div className="img img1">
+              <img src={vst1} alt="" />
+            </div>
+            <div className="img img2">
+              <img src={vst2} alt="" />
+            </div>
+            <div className="img img3">
+              <img src={vst3} alt="" />
+            </div>
+            <div className="img img4">
+              <img src={vst4} alt="" />
+            </div>
+            <div className="img img5">
+              <img src={vst5} alt="" />
+            </div>
           </div>
         </div>
       </section>

@@ -14,12 +14,27 @@
   // NAVBAR
   .navbar {
     display: flex;
-    
+    padding: 0 100px;
+    height: 90px;
+
+    // LOGO
+    .nav {
+      height: 56px;
+
+      a {
+        height: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+
     ul {
-      position: absolute;
       padding: 0px;
       list-style: none;
       text-align: center;
+      padding: 24px;
     }
 
     li {
