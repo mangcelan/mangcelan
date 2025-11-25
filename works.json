@@ -1,39 +1,39 @@
 [
   {
     "id": "001",
-    "slug": "carved-tv-console",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "candle-flower-stand",
+    "title": "小木花系列｜試管花架",
     "year": 2025,
     "desc": "以山形紋理為靈感的客製電視櫃。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
-    "state": "無現貨，可接單製作",
-    "cover": "works_chair.01-1.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "materials": "胡桃木實木 + 玻璃試管",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.01-1.jpg",
+    "images": ["works_flower.01-1.jpg", "works_flower.01-2.jpg"]
   },
   {
     "id": "002",
-    "slug": "wabi-sabi-stool",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "candle-flower-stand",
+    "title": "小木花系列｜音響試管花架",
     "year": 2025,
     "desc": "以山形紋理為靈感的客製電視櫃。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
-    "state": "無現貨，可接單製作",
-    "cover": "works_cabinet.02-1.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "materials": "胡桃木實木 + 玻璃試管",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.03.jpg",
+    "images": ["works_flower.03"]
   },
   {
     "id": "003",
-    "slug": "wasabi-stool",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "candle",
+    "title": "小木花系列｜燭台花架",
     "year": 2025,
     "desc": "以山形紋理為靈感的客製電視櫃。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
-    "state": "無現貨，可接單製作",
-    "cover": "works_chair.02-3.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "materials": "樟木實木 / 胡桃木實木",
+    "state": "有現貨，可接單製作",
+    "cover": "works_candle.02-1.JPG",
+    "images": ["works_candle.02-1.JPG","works_candle.02-2.JPG"]
   },
   {
     "id": "004",
