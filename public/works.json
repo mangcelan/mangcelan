@@ -2,11 +2,11 @@
   {
     "id": "001",
     "slug": "candle-flower-stand",
-    "title": "小木花系列｜燭台花架",
+    "title": "木質調系列｜燭台花架",
     "year": 2025,
     "desc": "柔木托住花與燭光，為日常留下一份安靜的小暖意。",
-    "size": "W40 × D30 × H45",
-    "materials": "樟木實木 / 胡桃木實木",
+    "size": "W18 × D11 × H6",
+    "materials": "樟木實木 / 杉木實木",
     "state": "有現貨，可接單製作",
     "cover": "works_candle.01.jpg",
     "images": ["works_candle.02-1.jpg", "works_candle.02-2.jpg"]
@@ -14,7 +14,7 @@
   {
     "id": "002",
     "slug": "armchair",
-    "title": "家居系列｜實木扶手椅",
+    "title": "家具系列｜弧扶木椅",
     "year": 2025,
     "desc": "柔和弧線托住身體，坐下即感受木的溫度。",
     "size": "W40 × D30 × H45",
@@ -26,7 +26,7 @@
   {
     "id": "003",
     "slug": "slant-back-chair",
-    "title": "家居系列｜斜背實木椅",
+    "title": "家具系列｜斜背實木椅",
     "year": 2025,
     "desc": "以輕盈角度承托日常，留下自然的靜謐感。",
     "size": "W40 × D30 × H45",
@@ -38,19 +38,19 @@
   {
     "id": "004",
     "slug": "work-table",
-    "title": "家居系列｜實木工作桌",
+    "title": "家具系列｜原木工作桌",
     "year": 2025,
     "desc": "俐落線條與溫潤桌面，陪伴專注的每一刻。",
-    "size": "W40 × D30 × H45",
-    "materials": "淺色柚木實木",
+    "size": "尺寸可依環境訂製",
+    "materials": "檜木實木",
     "state": "無現貨，可接單製作",
-    "cover": "works_desk.01.jpg",
-    "images": ["works_desk.01.jpg"]
+    "cover": "works_table.01.jpg",
+    "images": ["works_table.01.jpg"]
   },
   {
     "id": "005",
     "slug": "brick-flower-stand",
-    "title": "小木花系列｜試管花架",
+    "title": "花器系列｜磚型木痕花器",
     "year": 2025,
     "desc": "保留原木肌理，讓一枝小花也有安穩所在。",
     "size": "W40 × D30 × H45",
@@ -62,11 +62,11 @@
   {
     "id": "006",
     "slug": "frame-flower-stand",
-    "title": "小木花系列｜框型試管花架",
+    "title": "花器系列｜框型留白花器",
     "year": 2025,
     "desc": "簡單留白的木框，讓植枝花葉自在地伸展。",
-    "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 玻璃試管",
+    "size": "W18 × D3.5 × H8.5",
+    "materials": "北美胡桃木 + 玻璃試管",
     "state": "有現貨，可接單製作",
     "cover": "works_flower.02-2.jpg",
     "images": ["works_flower.02-1.jpg", "works_flower.02-2.jpg"]
@@ -74,7 +74,7 @@
   {
     "id": "007",
     "slug": "block-flower-stand",
-    "title": "小木花系列｜洞型立方試管花架",
+    "title": "花器系列｜洞型立方花器",
     "year": 2025,
     "desc": "以圓洞引光透風，呈現自然與木材的輕巧平衡。",
     "size": "W40 × D30 × H45",
@@ -82,5 +82,17 @@
     "state": "有現貨，可接單製作",
     "cover": "works_flower.03.jpg",
     "images": ["works_flower.03.jpg"]
+  },
+  {
+    "id": "008",
+    "slug": "jewelry-box",
+    "title": "器物系列｜木質珠寶盒",
+    "year": 2025,
+    "desc": "圓角木盒收住心意，靜靜守著珍貴的小物。",
+    "size": "W6 × D6 × H6",
+    "materials": "鐵木實木",
+    "state": "有現貨，可接單製作",
+    "cover": "works_jewelry.01.jpg",
+    "images": ["works_jewelry.01.jpg"]
   }
 ]

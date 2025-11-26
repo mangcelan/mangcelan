@@ -35,7 +35,7 @@ const Nav = () => {
           to="/contact"
           className={({ isActive }) => `link link-hover ${isActive ? 'font-semibold' : ''}`}
         >
-          聯繫我們
+          聯絡我們
         </NavLink>
       </li>
     </>
@@ -107,7 +107,7 @@ const Nav = () => {
                   className="link"
                   aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
-                  聯繫我們
+                  聯絡我們
                 </NavLink>
               </li>
             </ul>
