@@ -17,9 +17,15 @@ const imageMap = import.meta.glob('../assets/images/works/*.{jpg,png,webp,avif}'
 });
 
 const getCoverSrc = (filename) => {
-  if (!filename) return '';
+  if (!filename) return null;
   const path = `../assets/images/works/${filename}`;
-  return imageMap[path] || '';
+  const img = imageMap[path];
+
+  if (!img) {
+    console.warn('找不到圖片：', filename, ' 期待路徑：', path);
+  }
+
+  return img ?? null;
 };
 
 const Works = () => {
