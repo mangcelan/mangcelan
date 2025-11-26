@@ -4,9 +4,6 @@ import { useWorksData } from '../hooks/useWorksData';
 
 // IMAGES
 import glarrow from '../assets/images/gl-arrow.svg';
-import img1 from '../assets/images/works/works_desk.01-1.jpg';
-import img2 from '../assets/images/works/works_desk.01-2.jpg';
-import img3 from '../assets/images/works/works_desk.01-3.jpg';
 
 // SASS
 import '../sass/workDetail.scss';

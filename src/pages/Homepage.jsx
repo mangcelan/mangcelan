@@ -25,12 +25,6 @@ import Works from './Works.jsx';
 import Reservation from '../components/Reservation.jsx';
 import BackToTop from '../components/BackToTop.jsx';
 
-// SWIPER
-import sw1 from '../assets/images/works/works_cabinet.06-1.jpg';
-import sw2 from '../assets/images/works/works_cabinet.05-1.jpg';
-import sw3 from '../assets/images/works/works_diningtable.01-1.png';
-import sw4 from '../assets/images/works/works_livingroom.01-1.jpg';
-
 // SASS
 import '../sass/homepage.scss';
 
@@ -91,6 +85,7 @@ export default function Homepage() {
         </header>
 
         <div className="text-box">
+          {/* 說明文字 */}
           <div className="text">
             <p>
               蠻自然家具設計成立於2021年，
@@ -118,7 +113,7 @@ export default function Homepage() {
           </div>
 
           <Link to="/about" className="brand-img">
-            <p>品牌形象</p>
+            <p>了解更多</p>
           </Link>
         </div>
 

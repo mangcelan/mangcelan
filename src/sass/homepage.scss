@@ -6,8 +6,10 @@
 // HERO
 .hero {
   position: relative;
-  height: fit-content;
+  height: 100vh;
   overflow: hidden;
+  background-image: url('../assets/images/visit/woodcraft_visit7.jpg');
+
 
   header {
     color: $cream;
@@ -17,14 +19,23 @@
     width: 100%;
     height: 100%;
     padding: 30vh 15vw 0;
+    white-space: nowrap;
+
+    @media(max-width:768px) {
+          padding: 30vh 15vw 0;
+
+          }
   }
 
   video {
     filter: brightness(60%) contrast(110%);
     width: auto;
     height: 100%;
+    display: none;
   }
+
 }
+
 
 // Our Story
 #Ourstory {
@@ -108,12 +119,16 @@
     width: 100%;
     height: 200vh;
     overflow: hidden;
+    position: absolute;
+    margin: 100vh;
 
     .image-box {
       position: absolute;
       z-index: 0;
       width: 10px;
       height: 10px;
+      top: 85vh;
+      left: 45vw;
 
       .img {
         position: absolute;
