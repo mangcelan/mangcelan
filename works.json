@@ -1,30 +1,6 @@
 [
   {
     "id": "001",
-    "slug": "candle-flower-stand",
-    "title": "小木花系列｜試管花架",
-    "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
-    "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 玻璃試管",
-    "state": "有現貨，可接單製作",
-    "cover": "works_flower.01-1.jpg",
-    "images": ["works_flower.01-1.jpg", "works_flower.01-2.jpg"]
-  },
-  {
-    "id": "002",
-    "slug": "candle-flower-stand",
-    "title": "小木花系列｜音響試管花架",
-    "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
-    "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 玻璃試管",
-    "state": "有現貨，可接單製作",
-    "cover": "works_flower.03.jpg",
-    "images": ["works_flower.03"]
-  },
-  {
-    "id": "003",
     "slug": "candle",
     "title": "小木花系列｜燭台花架",
     "year": 2025,
@@ -32,44 +8,79 @@
     "size": "W40 × D30 × H45",
     "materials": "樟木實木 / 胡桃木實木",
     "state": "有現貨，可接單製作",
-    "cover": "works_candle.02-1.JPG",
-    "images": ["works_candle.02-1.JPG","works_candle.02-2.JPG"]
+    "cover": "works_candle.01.jpg",
+    "images": ["works_candle.02-1.jpg", "works_candle.02-2.jpg"]
+  },
+  {
+    "id": "002",
+    "slug": "chair",
+    "title": "家居系列｜實木扶手椅",
+    "year": 2025,
+    "desc": "柔和弧線托住身體，坐下即感受木的溫度。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 天然木蠟油",
+    "state": "無現貨，可接單製作",
+    "cover": "works_chair.01.jpg",
+    "images": ["works_chair.01.jpg"]
+  },
+  {
+    "id": "003",
+    "slug": "chair",
+    "title": "家居系列｜斜背實木椅",
+    "year": 2025,
+    "desc": "以輕盈角度承托日常，留下自然的靜謐感。",
+    "size": "W40 × D30 × H45",
+    "materials": "柚木實木",
+    "state": "無現貨，可接單製作",
+    "cover": "works_chair.01.jpg",
+    "images": ["works_chair.02.jpg"]
   },
   {
     "id": "004",
-    "slug": "kawaii-stool",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "desk",
+    "title": "家居系列｜實木工作桌",
     "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "desc": "俐落線條與溫潤桌面，陪伴專注的每一刻。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
+    "materials": "淺色柚木實木",
     "state": "無現貨，可接單製作",
-    "cover": "works_bedstead.01-1.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "cover": "works_desk.01.jpg",
+    "images": ["works_desk.01.jpg"]
   },
   {
     "id": "005",
-    "slug": "C-stand",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "candle-flower-stand",
+    "title": "小木花系列｜試管花架",
     "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "desc": "保留原木肌理，讓一枝小花也有安穩所在。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
-    "state": "無現貨，可接單製作",
-    "cover": "works_cabinet.07-1.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "materials": "胡桃木實木 + 玻璃試管",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.01-1.jpg",
+    "images": ["works_flower.01-1.jpg", "works_flower.01-2.jpg"]
   },
   {
     "id": "006",
-    "slug": "mangcelan-chair",
-    "title": "侘寂系列｜實木椅凳",
+    "slug": "candle-flower-stand",
+    "title": "小木花系列｜框型試管花架",
     "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "desc": "簡單留白的木框，讓植枝花葉自在地伸展。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
-    "state": "無現貨，可接單製作",
-    "cover": "works_desk.01-3.jpg",
-    "images": ["works_cabinet.06-1.jpg", "works_cabinet.06-2.jpg"]
+    "materials": "胡桃木實木 + 玻璃試管",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.02-2.jpg",
+    "images": ["works_flower.02-1.jpg", "works_flower.02-2.jpg"]
+  },
+  {
+    "id": "006",
+    "slug": "candle-flower-stand",
+    "title": "小木花系列｜洞型立方試管花架",
+    "year": 2025,
+    "desc": "以圓洞引光透風，呈現自然與木材的輕巧平衡。",
+    "size": "W40 × D30 × H45",
+    "materials": "胡桃木實木 + 玻璃試管",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.03.jpg",
+    "images": ["works_flower.03.jpg"]
   }
 ]
-
