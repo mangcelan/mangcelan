@@ -45,7 +45,7 @@
     "materials": "檜木實木",
     "state": "無現貨，可接單製作",
     "cover": "works_table.01.jpg",
-    "images": ["works_desk.01.jpg"]
+    "images": ["works_table.01.jpg"]
   },
   {
     "id": "005",
@@ -85,7 +85,7 @@
   },
   {
     "id": "008",
-    "slug": "block-flower-stand",
+    "slug": "jewelry-box",
     "title": "器物系列｜木質珠寶盒",
     "year": 2025,
     "desc": "圓角木盒收住心意，靜靜守著珍貴的小物。",
