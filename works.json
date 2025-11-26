@@ -1,10 +1,10 @@
 [
   {
     "id": "001",
-    "slug": "candle",
+    "slug": "candle-flower-stand",
     "title": "小木花系列｜燭台花架",
     "year": 2025,
-    "desc": "以山形紋理為靈感的客製電視櫃。",
+    "desc": "柔木托住花與燭光，為日常留下一份安靜的小暖意。",
     "size": "W40 × D30 × H45",
     "materials": "樟木實木 / 胡桃木實木",
     "state": "有現貨，可接單製作",
@@ -13,31 +13,31 @@
   },
   {
     "id": "002",
-    "slug": "chair",
+    "slug": "armchair",
     "title": "家居系列｜實木扶手椅",
     "year": 2025,
     "desc": "柔和弧線托住身體，坐下即感受木的溫度。",
     "size": "W40 × D30 × H45",
-    "materials": "胡桃木實木 + 天然木蠟油",
+    "materials": "淺色柚木實木",
     "state": "無現貨，可接單製作",
     "cover": "works_chair.01.jpg",
     "images": ["works_chair.01.jpg"]
   },
   {
     "id": "003",
-    "slug": "chair",
+    "slug": "slant-back-chair",
     "title": "家居系列｜斜背實木椅",
     "year": 2025,
     "desc": "以輕盈角度承托日常，留下自然的靜謐感。",
     "size": "W40 × D30 × H45",
-    "materials": "柚木實木",
+    "materials": "淺色柚木實木",
     "state": "無現貨，可接單製作",
-    "cover": "works_chair.01.jpg",
+    "cover": "works_chair.02.jpg",
     "images": ["works_chair.02.jpg"]
   },
   {
     "id": "004",
-    "slug": "desk",
+    "slug": "work-table",
     "title": "家居系列｜實木工作桌",
     "year": 2025,
     "desc": "俐落線條與溫潤桌面，陪伴專注的每一刻。",
@@ -49,7 +49,7 @@
   },
   {
     "id": "005",
-    "slug": "candle-flower-stand",
+    "slug": "brick-flower-stand",
     "title": "小木花系列｜試管花架",
     "year": 2025,
     "desc": "保留原木肌理，讓一枝小花也有安穩所在。",
@@ -61,7 +61,7 @@
   },
   {
     "id": "006",
-    "slug": "candle-flower-stand",
+    "slug": "frame-flower-stand",
     "title": "小木花系列｜框型試管花架",
     "year": 2025,
     "desc": "簡單留白的木框，讓植枝花葉自在地伸展。",
@@ -73,7 +73,7 @@
   },
   {
     "id": "007",
-    "slug": "candle-flower-stand",
+    "slug": "block-flower-stand",
     "title": "小木花系列｜洞型立方試管花架",
     "year": 2025,
     "desc": "以圓洞引光透風，呈現自然與木材的輕巧平衡。",
