@@ -8,8 +8,6 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-image: url('../assets/images/visit/woodcraft_visit7.jpg');
-
 
   header {
     color: $cream;
@@ -20,21 +18,22 @@
     height: 100%;
     padding: 30vh 15vw 0;
 
-    @media(max-width:768px) {
-          padding: 30vh 15vw 0;
-
-          }
+    @media (max-width: 768px) {
+      padding: 30vh 15vw 0;
+    }
   }
 
   video {
     filter: brightness(60%) contrast(110%);
-    width: auto;
-    height: 100%;
-    display: none;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      object-position: -10rem;
+    }
   }
-
 }
-
 
 // Our Story
 #Ourstory {
@@ -55,6 +54,10 @@
     padding: 10vh 15vw 0;
     z-index: 1;
     width: 100%;
+
+    @media (max-width: 768px) {
+      padding: 0 15vw 0;
+    }
   }
 
   .text-box {
@@ -71,6 +74,14 @@
       background-color: $light;
       text-align: center;
       width: fit-content;
+
+      p{
+
+        @media (max-width: 640px) {
+          font-size: $f-s-xxs;
+        }
+      }
+
     }
 
     a {

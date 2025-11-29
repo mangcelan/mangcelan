@@ -3,116 +3,126 @@
 @use './font' as *;
 
 // CONTACT BTN
-      @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
-        transition: $property $duration $ease;
-      }
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
+  transition: $property $duration $ease;
+}
 
-      * {
-        box-sizing: border-box;
-        &::before,
-        &::after {
-          box-sizing: border-box;
-        }
-      }
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
 
-      .contact {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        outline: none;
-        border: 0;
-        vertical-align: middle;
-        text-decoration: none;
-        background: transparent;
-        padding: 0;
-        font-size: inherit;
-        font-family: inherit;
+.contact {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
 
-        &.contact {
-          width: 20rem;
-          height: auto;
-          .circle {
-            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-            position: relative;
-            display: block;
-            margin: 0;
-            width: 3rem;
-            height: 3rem;
-            background: $cream;
-            border-radius: 1.625rem;
-            .icon {
-              @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              margin: auto;
-              color: $sage;
-              &.arrow {
-                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-                left: 0.625rem;
-                background: none;
-                &::before {
-                  position: absolute;
-                  content: '';
-                  top: -0.25rem;
-                  right: 0.0625rem;
-                  width: 0.625rem;
-                  height: 0.625rem;
-                  border-top: 0.125rem solid #fff;
-                  border-right: 0.125rem solid #fff;
-                  transform: rotate(45deg);
-                }
-              }
-            }
-          }
-          .button-text {
-            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+  &.contact {
+    width: 20rem;
+    height: auto;
+
+    @media (max-width: 640px) {
+      width: 18.75rem;
+    }
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $cream;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: $sage;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 0.625rem;
+          background: none;
+          &::before {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 0.75rem 0;
-            margin: 0 0 0 4.5rem;
-            color: $cream;
-            font-family: $family-tc;
-            font-weight: $f-w-r;
-            font-size: $f-s-sm;
-            line-height: 1.75;
-            text-transform: uppercase;
-
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
           }
-          .mail{
-            font-family: $family-en;
-            letter-spacing: 1px;
-          }
-        }
-        &:hover {
-          .circle {
-            width: 100%;
-            background: $wood;
-            .icon {
-              &.arrow {
-                color: $cream;
-                transform: translate(1rem, 0);
-              }
-            }
-          }
-
         }
       }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 4.5rem;
+      color: $cream;
+      font-family: $family-tc;
+      font-weight: $f-w-r;
+      font-size: $f-s-sm;
+      line-height: 1.75;
+      text-transform: uppercase;
 
-      @supports (display: grid) {
-        body {
-          // display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 0.625rem;
-          grid-template-areas: '. main main .' '. main main .';
-        }
+      @media (max-width: 640px) {
+        font-size: $f-s-xs;
+      }
+    }
 
-        #container {
-          grid-area: main;
-          align-self: center;
-          justify-self: center;
+
+    .mail {
+      font-family: $family-en;
+      letter-spacing: 1px;
+    }
+
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      background: $wood;
+      .icon {
+        &.arrow {
+          color: $cream;
+          transform: translate(1rem, 0);
         }
       }
+    }
+  }
+}
+
+@supports (display: grid) {
+  body {
+    // display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: '. main main .' '. main main .';
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+

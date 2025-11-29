@@ -118,7 +118,6 @@ export default function Homepage() {
         </div>
 
         <div className="bg-box">
-
           <div className="image-box">
             {/* 照片 */}
             <div className="img img1">

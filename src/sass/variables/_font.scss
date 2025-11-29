@@ -33,18 +33,36 @@ h2 {
   font-family: $family-display;
   font-size: $f-s-xxl;
   font-weight: $f-w-r;
+
+  @media (max-width: 768px) {
+    font-size: $f-s-xl;
+  }
+  @media (max-width: 640px) {
+    font-size: $f-s-lg;
+  }
 }
 
 h3 {
   font-family: $family-en;
   font-size: $f-s-xl;
   font-weight: $f-w-r;
+
+  @media (max-width: 768px) {
+    font-size: $f-s-lg;
+  }
+  @media (max-width: 640px) {
+    font-size: $f-s-md;
+  }
 }
 
 h4 {
   font-family: $family-display;
   font-size: $f-s-lg;
   font-weight: $f-w-r;
+
+  @media (max-width: 640px) {
+        font-size: $f-s-md;
+      }
 }
 
 p {
@@ -52,3 +70,4 @@ p {
   font-size: $f-s-sm;
   font-weight: $f-w-r;
 }
+
