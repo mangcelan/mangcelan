@@ -57,7 +57,7 @@ const Nav = () => {
           <div className="dropdown dropdown-end lg:hidden">
 
             <div className="collapse-title font-semibold">
-              <div tabIndex={0} className="btn btn-circle">
+              <div tabIndex={0} className="btn btn-square">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
