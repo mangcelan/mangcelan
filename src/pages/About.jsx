@@ -32,34 +32,34 @@ const About = () => {
             <div className="carousel-item w-full">
               <img
                 src={awrd1}
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
+                className="w-full aspect-[4/3] object-cover"
+                alt="蠻自然得獎照片"
               />
             </div>
             <div className="carousel-item w-full">
               <img
                 src={awrd2}
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
+                className="w-full aspect-[4/3] object-cover"
+                alt="蠻自然得獎照片"
               />
             </div>
             <div className="carousel-item w-full">
               <img
                 src={awrd3}
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
+                className="w-full aspect-[4/3] object-cover"
+                alt="蠻自然得獎照片"
               />
             </div>
             <div className="carousel-item w-full">
               <img
                 src={awrd4}
-                className="w-full"
-                alt="Tailwind CSS Carousel component"
+                className="w-full aspect-[4/3] object-cover"
+                alt="蠻自然得獎照片"
               />
             </div>
           </div>
 
-          <div className="block1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <div className="block1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
             <h4>讓自然與生活一同呼吸的家</h4>
             <p>
               家具，應該與生活一起呼吸。山木工所的每件作品，都是在自然與人之間找到平衡的結果。我們將「自然共存」的理念，透過材質、設計與細節融入每一張桌、每一把椅，讓它們在你的生活中，不只是工具，而是伴隨日子的夥伴。
