@@ -5,10 +5,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // IMAGES
-import awrd1 from '/images/about/awards_230731.jpg'
-import awrd2 from '/images/about/awards_million01.jpeg'
-import awrd3 from '/images/about/awards_million02.jpeg'
-import awrd4 from '/images/about/awards_silver.jpeg'
+import awrd1 from '/images/about/awards_230731.jpg';
+import awrd2 from '/images/about/awards_million01.jpg';
+import awrd3 from '/images/about/awards_million02.jpg';
+import awrd4 from '/images/about/awards_silver.jpg';
 
 // SASS
 import '../sass/about.scss';
@@ -29,33 +29,17 @@ const About = () => {
           </header>
 
           <div className="img1 carousel size-fit">
-            <div className="carousel-item w-full">
-              <img
-                src={awrd1}
-                className="w-full aspect-[4/3] object-cover"
-                alt="蠻自然得獎照片"
-              />
+            <div className="carousel-item w-full ">
+              <img src={awrd1} className="w-full object-cover" alt="蠻自然得獎照片" />
             </div>
             <div className="carousel-item w-full">
-              <img
-                src={awrd2}
-                className="w-full aspect-[4/3] object-cover"
-                alt="蠻自然得獎照片"
-              />
+              <img src={awrd2} className="w-full object-cover" alt="蠻自然得獎照片" />
             </div>
             <div className="carousel-item w-full">
-              <img
-                src={awrd3}
-                className="w-full aspect-[4/3] object-cover"
-                alt="蠻自然得獎照片"
-              />
+              <img src={awrd3} className="w-full object-cover" alt="蠻自然得獎照片" />
             </div>
             <div className="carousel-item w-full">
-              <img
-                src={awrd4}
-                className="w-full aspect-[4/3] object-cover"
-                alt="蠻自然得獎照片"
-              />
+              <img src={awrd4} className="w-full object-cover" alt="蠻自然得獎照片" />
             </div>
           </div>
 

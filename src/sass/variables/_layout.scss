@@ -3,9 +3,9 @@
 @use './font' as *;
 @use './size' as *;
 
-// * {
-//   outline: 0.5px solid red;
-// }
+* {
+  outline: 0.5px solid red;
+}
 
 // WRAP
 .wrap {
@@ -166,6 +166,16 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+      }
+    }
+    @media (min-width: 769px) {
+      .footer-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .contact-btn {
+        padding-right: 10vw;
       }
     }
 
