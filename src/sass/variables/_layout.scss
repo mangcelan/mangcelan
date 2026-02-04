@@ -3,9 +3,9 @@
 @use './font' as *;
 @use './size' as *;
 
-// * {
-//   outline: 0.5px solid red;
-// }
+* {
+  outline: 0.5px solid red;
+}
 
 // WRAP
 .wrap {
@@ -79,7 +79,7 @@
     background-color: transparent;
 
     position: fixed;
-    z-index: 5;
+    z-index: 6;
     aspect-ratio: 1/1;
     border-radius: $radius-ex;
     background-color: $cream;
@@ -92,11 +92,20 @@
 
     .tArrow {
       width: 24px;
+      background-image: url('/src/assets/images/top-arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0%;
     }
 
     &:hover {
       background-color: $wood;
       transition: all 0.45s;
+
+      .tArrow {
+        background-image: url('/src/assets/images/top-arrow\(w\).svg');
+        transition: all 0.45s;
+      }
     }
   }
 

@@ -13,7 +13,7 @@ const backToTop = () => {
   return (
     <>
       <div className='top-btn' onClick={backToTop}>
-        <img src={tArrow} className='tArrow' alt="" />
+        <div className='tArrow' alt="" />
       </div>
     </>
   );
