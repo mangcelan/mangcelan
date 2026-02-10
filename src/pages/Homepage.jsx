@@ -72,6 +72,7 @@ export default function Homepage() {
         </header>
 
         <video src="./mangcelan-hero.mp4" id="Video" ref={videoRef} autoPlay muted></video>
+        <img src={vst1} alt="蠻自然家具設計首頁" />
 
         {/* reservation */}
         <Reservation />

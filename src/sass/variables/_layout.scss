@@ -3,9 +3,9 @@
 @use './font' as *;
 @use './size' as *;
 
-// * {
-//   outline: 0.5px solid red;
-// }
+* {
+  outline: 0.5px solid red;
+}
 
 // WRAP
 .wrap {
@@ -128,17 +128,22 @@
 
       p {
         font-family: $family-tc;
-        font-size: $f-s-md;
+        font-size: $f-s-btn;
         font-weight: $f-w-r;
         color: $wood;
         writing-mode: vertical-rl;
         letter-spacing: 0.2rem;
+
+        @media (max-width: 640px) {
+          font-size: $f-s-sm;
+        }
       }
 
       &:hover {
         color: $white;
         background-color: $wood;
         border: 1.5px solid $wood;
+        border-radius: 0 22px 22px 0;
         transition: all, 0.45s;
 
         p {

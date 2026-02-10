@@ -2,6 +2,8 @@
 @use './color' as *;
 @use './font' as *;
 
+// FOOTER CONTACT BTN
+
 // CONTACT BTN
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
   transition: $property $duration $ease;

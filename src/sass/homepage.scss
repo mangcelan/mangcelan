@@ -29,8 +29,18 @@
     height: 100vh;
     object-fit: cover;
 
-    @media (max-width: 768px) {
-      object-position: -10rem;
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  img {
+    filter: brightness(60%) contrast(110%);
+    height: 100vh;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
@@ -75,13 +85,11 @@
       text-align: center;
       width: fit-content;
 
-      p{
-
+      p {
         @media (max-width: 640px) {
-          font-size: $f-s-xxs;
+          font-size: $f-s-xs;
         }
       }
-
     }
 
     a {
@@ -110,7 +118,7 @@
         border: 1.5px solid $sage;
 
         font-family: $family-tc;
-        font-size: $f-s-md;
+        font-size: $f-s-btn;
         font-weight: $f-w-r;
         letter-spacing: 0.1rem;
 
@@ -120,6 +128,10 @@
           border: 1.5px solid $wood;
           border-radius: $radius-ex;
           transition: all, 0.45s;
+        }
+        
+        @media (max-width: 640px) {
+          font-size: $f-s-sm;
         }
       }
     }

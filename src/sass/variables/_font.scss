@@ -10,7 +10,7 @@ $f-s-xxs: 0.75rem; // 12px small
 $f-s-xs: 0.875rem; // 14px second body
 $f-s-sm: 1rem; // 16px body
 $f-s-md: 1.25rem; // 20px
-$f-s-btn: 1.5rem; // 24px btn
+$f-s-btn: 1.25rem; // 20px btn
 $f-s-lg: 1.75rem; // 28px H4
 $f-s-xl: 2rem; // 32px H3
 $f-s-xxl: 3rem; // 48px H2
@@ -38,7 +38,7 @@ h2 {
     font-size: $f-s-xl;
   }
   @media (max-width: 640px) {
-    font-size: $f-s-lg;
+    font-size: $f-s-xl;
   }
 }
 
