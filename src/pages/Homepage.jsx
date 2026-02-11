@@ -88,6 +88,7 @@ export default function Homepage() {
         <div className="text-box">
           {/* 說明文字 */}
           <div className="text">
+            <h4>從山林到客廳——原住民工藝生活進行式</h4>
             <p>
               蠻自然家具設計成立於2021年，
               <br />

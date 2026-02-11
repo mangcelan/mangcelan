@@ -24,8 +24,8 @@ const About = () => {
         <div className="about-wrap">
           {/* 段落標題 */}
           <header>
-            <h2>關於山木工所</h2>
-            <h3>About Shanmu Atelier</h3>
+            <h2>關於蠻自然</h2>
+            <h3>About Mangcelan Furniture Design</h3>
           </header>
 
           <div className="img1 carousel size-fit">
@@ -46,7 +46,7 @@ const About = () => {
           <div className="block1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
             <h4>讓自然與生活一同呼吸的家</h4>
             <p>
-              家具，應該與生活一起呼吸。山木工所的每件作品，都是在自然與人之間找到平衡的結果。我們將「自然共存」的理念，透過材質、設計與細節融入每一張桌、每一把椅，讓它們在你的生活中，不只是工具，而是伴隨日子的夥伴。
+              家具，應該與生活一起呼吸。蠻自然的每件作品，都是在自然與人之間找到平衡的結果。我們將「自然共存」的理念，透過材質、設計與細節融入每一件作品中，讓它們在你的生活，不只是擺設，而是伴隨日子的夥伴。
             </p>
           </div>
 
