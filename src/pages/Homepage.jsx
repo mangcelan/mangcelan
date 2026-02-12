@@ -62,11 +62,22 @@ export default function Homepage() {
     }
   }, []); // 空依賴陣列確保只執行一次 (類似 componentDidMount)
 
-  // // 只有在視窗寬度大於 640px 時才加入影片原始碼
-  // if (window.innerWidth > 640) {
-  //   const videoContainer = document.getElementById('video-container');
-  //   videoContainer.innerHTML = `<video src="video.mp4" autoplay loop muted></video>`;
-  // }
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // 定義檢查寬度的函數
+    const checkWidth = () => {
+      setIsDesktop(window.innerWidth > 640);
+    };
+
+    // 初始化檢查一次
+    checkWidth();
+
+    // 監聽視窗縮放（選配，如果你希望轉橫向時影片會出現）
+    window.addEventListener('resize', checkWidth);
+    return () => window.removeEventListener('resize', checkWidth);
+  }, []);
+
   return (
     <>
       {/* HERO */}
@@ -76,8 +87,15 @@ export default function Homepage() {
           <h4>從山林到客廳——原住民工藝生活進行式</h4>
         </header>
 
-        <video src="./mangcelan-hero.mp4" id="Video" ref={videoRef} autoPlay muted></video>
-        <img src={vst1} alt="蠻自然家具設計首頁" />
+        {/* <video src="./mangcelan-hero.mp4" id="Video" ref={videoRef} autoPlay muted></video>
+        <img src={vst1} alt="蠻自然家具設計首頁" /> */}
+
+        {/* 只有在 isDesktop 為 true 時才渲染影片 */}
+        {isDesktop ? (
+          <video src="./mangcelan-hero.mp4" id="Video" className="Video" ref={videoRef} autoPlay muted loop playsInline />
+        ) : (
+          <img src={vst1} alt="蠻自然家具設計首頁" />
+        )}
 
         {/* reservation */}
         <Reservation />
