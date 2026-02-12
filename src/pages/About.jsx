@@ -18,6 +18,12 @@ const About = () => {
     AOS.init();
   }, []);
 
+  // 只有在視窗寬度大於 640px 時才加入影片原始碼
+  if (window.innerWidth > 640) {
+    const videoContainer = document.getElementById('video-container');
+    videoContainer.innerHTML = `<video src="video.mp4" autoplay loop muted></video>`;
+  }
+
   return (
     <>
       <section id="about">
@@ -25,7 +31,7 @@ const About = () => {
           {/* 段落標題 */}
           <header>
             <h2>關於蠻自然</h2>
-            <h3>About Mangcelan Furniture Design</h3>
+            <h3>Our Story</h3>
           </header>
 
           <div className="img1 carousel size-fit">

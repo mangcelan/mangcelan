@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 // IMAGE
-import logo from '../assets/logo-tc+en.png';
+import logo1 from '../assets/logo-tc+en.png';
+import logo2 from '../assets/mangcelan-logo.png';
 
 const Nav = () => {
   const navItems = (
@@ -47,7 +48,8 @@ const Nav = () => {
         {/* 左側：LOGO */}
         <div className="nav">
           <NavLink to="/" className="btn btn-link">
-            <img src={logo} alt="蠻自然logo" className="h-8 md:h-10 object-contain" />
+            <img src={logo1} alt="蠻自然logo" className="logo1 h-8 md:h-10 object-contain" />
+            <img src={logo2} alt="蠻自然logo" className="logo2 h-8 md:h-10 object-contain" />
           </NavLink>
         </div>
 

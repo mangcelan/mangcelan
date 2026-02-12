@@ -27,6 +27,16 @@
         img {
           height: 100%;
         }
+        .logo1 {
+          @media (max-width: 640px) {
+            display: none;
+          }
+        }
+        .logo2 {
+          @media (min-width: 640px) {
+            display: none;
+          }
+        }
       }
     }
 
