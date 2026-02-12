@@ -18,11 +18,6 @@ const About = () => {
     AOS.init();
   }, []);
 
-  // 只有在視窗寬度大於 640px 時才加入影片原始碼
-  if (window.innerWidth > 640) {
-    const videoContainer = document.getElementById('video-container');
-    videoContainer.innerHTML = `<video src="video.mp4" autoplay loop muted></video>`;
-  }
 
   return (
     <>

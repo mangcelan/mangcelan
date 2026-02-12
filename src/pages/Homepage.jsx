@@ -62,6 +62,11 @@ export default function Homepage() {
     }
   }, []); // 空依賴陣列確保只執行一次 (類似 componentDidMount)
 
+  // // 只有在視窗寬度大於 640px 時才加入影片原始碼
+  // if (window.innerWidth > 640) {
+  //   const videoContainer = document.getElementById('video-container');
+  //   videoContainer.innerHTML = `<video src="video.mp4" autoplay loop muted></video>`;
+  // }
   return (
     <>
       {/* HERO */}
