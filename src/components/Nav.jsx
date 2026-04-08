@@ -44,7 +44,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="navbar bg-base-100 flex justify-between px-8 md:px-8">
+      <nav className="navbar bg-base-100 flex justify-between px-8 md:px-8 fixed top-0 left-0 w-full z-50">
         {/* 左側：LOGO */}
         <div className="nav">
           <NavLink to="/" className="btn btn-link">
