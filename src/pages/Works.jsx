@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useWorksData } from '../hooks/useWorksData';
 import WorkCard from '../components/WorkCard';
 
 // IMAGES
-import rarrow from '../assets/images/gr-arrow.svg';
 
 // SASS
 import '../sass/works.scss';

@@ -94,5 +94,114 @@
     "state": "有現貨，可接單製作",
     "cover": "works_jewelry.01.jpg",
     "images": ["works_jewelry.01.jpg"]
+  },
+  {
+    "id": "009",
+    "slug": "memo-holder",
+    "title": "器物系列｜便條紙架",
+    "year": 2026,
+    "desc": "簡潔木構收納日常小物，讓實用機能也能展現木質工藝的細節。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_ornament.02.jpg",
+    "images": ["works_ornament.02.jpg"]
+  },
+  {
+    "id": "010",
+    "slug": "succulent-layer",
+    "title": "植栽系列｜多肉木架",
+    "year": 2026,
+    "desc": "以幾何輪廓襯托，讓木質與綠意交織出自然層次。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨",
+    "cover": "works_plant.01.jpg",
+    "images": ["works_plant.01.jpg"]
+  },
+  {
+    "id": "011",
+    "slug": "wooden-corner",
+    "title": "花器系列｜隅生棲木",
+    "year": 2026,
+    "desc": "保留木材自然的紋理與缺口，讓枝葉在木質的一隅，靜靜生長。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.04.jpg",
+    "images": ["works_flower.04.jpg"]
+  },
+  {
+    "id": "012",
+    "slug": "flower-vase",
+    "title": "花器系列｜條紋花瓶",
+    "year": 2026,
+    "desc": "木紋隨著器型層層延展，以溫潤曲線為空間添上一份自然雅致。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.06-1.jpg",
+    "images": ["works_flower.06-1.jpg", "works_flower.06-2.jpg"]
+  },
+  {
+    "id": "013",
+    "slug": "wooden-clock-dark",
+    "title": "居家飾品｜深色木質時鐘",
+    "year": 2026,
+    "desc": "深沉木紋搭配簡約指針，讓時間流轉也成為空間裡的一道風景。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_decor.04.jpg",
+    "images": ["works_decor.04.jpg"]
+  },
+  {
+    "id": "014",
+    "slug": "wooden-clock-light",
+    "title": "居家飾品｜原木數字時鐘",
+    "year": 2026,
+    "desc": "深沉木紋搭配簡約指針，讓時間流轉也成為空間裡的一道風景。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_decor.05.jpg",
+    "images": ["works_decor.05.jpg"]
+  },
+  {
+    "id": "015",
+    "slug": "wooden-clock-dark",
+    "title": "居家飾品｜牛頭掛飾",
+    "year": 2026,
+    "desc": "以舒展的角形與深淺木紋刻畫鮮明輪廓，為空間注入沉穩而率性的個性。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_decor.01-1.jpg",
+    "images": ["works_decor.01-1.jpg", "works_decor.01-2.jpg", "works_decor.01-3.jpg"]
+  },
+  {
+    "id": "016",
+    "slug": "wooden-clock-light",
+    "title": "居家飾品｜馬面掛飾",
+    "year": 2026,
+    "desc": "以層疊木形描繪動物輪廓，在自然紋理之中展現獨特的造型趣味。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_decor.02-1.jpg",
+    "images": ["works_decor.02-2.jpg"]
+  },
+  {
+    "id": "017",
+    "slug": "wooden-clock-light",
+    "title": "花器系列｜愛心花器。",
+    "year": 2026,
+    "desc": "媽媽親手包的飯糰，樸實平凡，卻讓人一想起就覺得安心。",
+    "size": "W- × D- × H-",
+    "materials": "-",
+    "state": "有現貨，可接單製作",
+    "cover": "works_flower.05-1.jpg",
+    "images": ["works_flower.05-2.jpg"]
   }
 ]
+
