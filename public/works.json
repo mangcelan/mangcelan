@@ -160,7 +160,7 @@
     "slug": "wooden-clock-light",
     "title": "居家飾品｜原木數字時鐘",
     "year": 2026,
-    "desc": "深沉木紋搭配簡約指針，讓時間流轉也成為空間裡的一道風景。",
+    "desc": "原木質地，清新。",
     "size": "W- × D- × H-",
     "materials": "-",
     "state": "有現貨，可接單製作",
@@ -169,7 +169,7 @@
   },
   {
     "id": "015",
-    "slug": "wooden-clock-dark",
+    "slug": "wooden-decor-bull",
     "title": "居家飾品｜牛頭掛飾",
     "year": 2026,
     "desc": "以舒展的角形與深淺木紋刻畫鮮明輪廓，為空間注入沉穩而率性的個性。",
@@ -181,7 +181,7 @@
   },
   {
     "id": "016",
-    "slug": "wooden-clock-light",
+    "slug": "wooden-decor-horse",
     "title": "居家飾品｜馬面掛飾",
     "year": 2026,
     "desc": "以層疊木形描繪動物輪廓，在自然紋理之中展現獨特的造型趣味。",
@@ -189,14 +189,14 @@
     "materials": "-",
     "state": "有現貨，可接單製作",
     "cover": "works_decor.02-1.jpg",
-    "images": ["works_decor.02-2.jpg"]
+    "images": ["works_decor.02-1.jpg", "works_decor.02-2.jpg"]
   },
   {
     "id": "017",
-    "slug": "wooden-clock-light",
+    "slug": "heart-flower",
     "title": "花器系列｜愛心花器。",
     "year": 2026,
-    "desc": "媽媽親手包的飯糰，樸實平凡，卻讓人一想起就覺得安心。",
+    "desc": "以溫潤木色勾勒愛心輪廓，讓花草的美好成為生活裡溫柔的點綴。",
     "size": "W- × D- × H-",
     "materials": "-",
     "state": "有現貨，可接單製作",

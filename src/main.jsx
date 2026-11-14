@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './tailwind.css'
 import './sass/main.scss'
 import App from './App.jsx'
-import { HashRouter, useLocation } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 
 createRoot(document.getElementById('root')).render(

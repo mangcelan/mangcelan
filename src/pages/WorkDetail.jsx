@@ -1,9 +1,33 @@
-import { useState, useEffect, useRef, useId } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useWorksData } from '../hooks/useWorksData';
 
 // IMAGES
 import glarrow from '../assets/images/gl-arrow.svg';
+
+// 自動匯入所有作品圖片
+const imageMap = import.meta.glob('../assets/images/works/*', {
+  eager: true,
+  import: 'default',
+  query: '?url',
+});
+
+// 依照圖片名稱取得圖片 URL
+const getWorkImage = (filename) => {
+  if (!filename) return null;
+
+  // 取得純檔名
+  const name = filename.split('/').pop();
+
+  // 對應圖片
+  const path = `../assets/images/works/${name}`;
+  const image = imageMap[path];
+
+  if (!image) {
+    console.warn('找不到作品圖片：', filename);
+  }
+
+  return image ?? null;
+};
 
 // SASS
 import '../sass/workDetail.scss';
@@ -28,76 +52,68 @@ const WorkDetail = () => {
     );
   }
 
+  // 1) 正規化作品圖片資料
+  // 優先使用 image（沒有才使用 cover
+  const names =
+    Array.isArray(w.images) && w.images.length
+      ? w.images
+      : Array.isArray(w.cover) && w.cover.length
+        ? w.cover
+        : [w.cover];
 
-  // 1) 把 w.cover / w.images 正規化成「圖片名稱陣列」
-  const names = (Array.isArray(w.images) && w.images.length) ? w.images
-            : (Array.isArray(w.cover) && w.cover.length) ? w.cover
-            : [w.cover];
-
-  // 2) 把名稱轉成可以用的 src（同時相容多種寫法）
-  const toSrc = (p) => {
-    if (typeof p !== 'string') return p;
-    if (/^https?:\/\//.test(p)) return p; // 完整網址
-    if (p.startsWith('/')) return `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`; // /images/...
-    return `${import.meta.env.BASE_URL}images/works/${p}`; // 純檔名 → 補上資料夾
-  };
-
-  const gallery = names.map(toSrc);
-  console.table(gallery); // ← 再對照 Network 的 Request URL
+  const gallery = names.map(getWorkImage).filter(Boolean);
 
   return (
-    <>
-      <section id="work-detail">
-        {/* 段落標題 */}
-        <header className="detail-header">
-          <h2>作品介紹</h2>
-          <h3>Works</h3>
-        </header>
+    <section id="work-detail">
+      {/* 段落標題 */}
+      <header className="detail-header">
+        <h2>作品介紹</h2>
+        <h3>Works</h3>
+      </header>
 
-        <div className="detail-content">
-          {/* 作品圖片 */}
-          {gallery.length > 0 && (
-            <div className="detail-img">
-              {gallery.map((src, i) => (
-                <img key={i} src={src} alt={`${w.title} 圖片 ${i + 1}`} loading="lazy" />
-              ))}
-            </div>
-          )}
-
-          {/* 作品說明 */}
-          <div className="text-box" key={w.id}>
-            <h3>{w.title}</h3>
-            <time className="year">{w.year}</time>
-
-            <div className="detail-desc">
-              <p>{w.desc}</p>
-            </div>
-
-            <div className="detail-specs">
-              <div className="size">
-                <h4>尺寸</h4>
-                <p>{w.size}</p>
-              </div>
-
-              <div className="material">
-                <h4>材質</h4>
-                <p>{w.materials}</p>
-              </div>
-
-              <div className="custom">
-                <h4>商品訂製</h4>
-                <p>{w.state}</p>
-              </div>
-            </div>
-
-            <Link to="/" className="back">
-              <img src={glarrow} alt="回上一頁" />
-              <p>回上一頁</p>
-            </Link>
+      <div className="detail-content">
+        {/* 作品圖片 */}
+        {gallery.length > 0 && (
+          <div className="detail-img">
+            {gallery.map((src, i) => (
+              <img key={i} src={src} alt={`${w.title} 圖片 ${i + 1}`} loading="lazy" />
+            ))}
           </div>
+        )}
+
+        {/* 作品說明 */}
+        <div className="text-box" key={w.id}>
+          <h3>{w.title}</h3>
+          <time className="year">{w.year}</time>
+
+          <div className="detail-desc">
+            <p>{w.desc}</p>
+          </div>
+
+          <div className="detail-specs">
+            <div className="size">
+              <h4>尺寸</h4>
+              <p>{w.size}</p>
+            </div>
+
+            <div className="material">
+              <h4>材質</h4>
+              <p>{w.materials}</p>
+            </div>
+
+            <div className="custom">
+              <h4>商品訂製</h4>
+              <p>{w.state}</p>
+            </div>
+          </div>
+
+          <Link to="/" className="back">
+            <img src={glarrow} alt="回上一頁" />
+            <p>回上一頁</p>
+          </Link>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

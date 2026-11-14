@@ -33,6 +33,11 @@ const Works = () => {
   if (error) return <p style={{ color: 'crimson' }}>讀取失敗：{error}</p>;
   if (!data) return <p>讀取中⋯⋯@@</p>;
 
+  // 作品排序：年份 > ID
+  const sortedWorks = [...data].sort((a, b) => {
+    return b.year - a.year || b.id.localeCompare(a.id);
+  });
+
   return (
     <>
       <section id="works">
@@ -51,7 +56,7 @@ const Works = () => {
 
         {/* Works */}
         <div className="works-list">
-          {data.map((w) => (
+          {sortedWorks.map((w) => (
             <div className="card-wrap" key={w.id}>
               <WorkCard
                 slug={w.slug}
